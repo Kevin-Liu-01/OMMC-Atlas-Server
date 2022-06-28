@@ -1,6 +1,6 @@
 
 const { MongoClient } = require("mongodb");
-const Db = "mongodb+srv://mern:mongodb@cluster0.prjff.mongodb.net/Tutorial?retryWrites=true&w=majority";
+const Db = "mongodb+srv://mern:mongodb@cluster0.prjff.mongodb.net/OMMCAtlas?retryWrites=true&w=majority";
 const client = new MongoClient(Db, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
@@ -14,7 +14,7 @@ const option = {
 	useFindAndModify: false,
 };
 
-mongoose.connect('mongodb+srv://mern:mongodb@cluster0.prjff.mongodb.net/Tutorial?retryWrites=true&w=majority', option)
+mongoose.connect('mongodb+srv://mern:mongodb@cluster0.prjff.mongodb.net/OMMCAtlas?retryWrites=true&w=majority', option)
 	.then(() => {
 		console.log('Mongoose init succeeded')
 	}).catch((err) => {
