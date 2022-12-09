@@ -7,6 +7,7 @@ QuestionModelSchema.Displayall = function (req, res) {
   QuestionModelSchema.find({})
     .exec()
     .then((result) => {
+      console.log("result" + result);
       return res.json(result);
     })
     .catch((error) => {
