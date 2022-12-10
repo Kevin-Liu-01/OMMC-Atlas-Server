@@ -1,5 +1,5 @@
 const { MongoClient } = require("mongodb");
-const Db = process.env.API_KEY;
+
 const client = new MongoClient(
   "mongodb+srv://mern:mongodb@cluster0.prjff.mongodb.net/OMMCAtlas?retryWrites=true&w=majority",
   {
@@ -17,7 +17,10 @@ const option = {
 };
 
 mongoose
-  .connect(Db, option)
+  .connect(
+    "mongodb+srv://mern:mongodb@cluster0.prjff.mongodb.net/OMMCAtlas?retryWrites=true&w=majority",
+    option
+  )
   .then(() => {
     console.log("Mongoose init SUCCESS: Database connection successful");
   })
