@@ -1,9 +1,12 @@
 const { MongoClient } = require("mongodb");
 const Db = process.env.API_KEY;
-const client = new MongoClient(Db, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+const client = new MongoClient(
+  "mongodb+srv://mern:mongodb@cluster0.prjff.mongodb.net/OMMCAtlas?retryWrites=true&w=majority",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 var mongoose = require("mongoose");
 mongoose.Promise = require("bluebird");
 
