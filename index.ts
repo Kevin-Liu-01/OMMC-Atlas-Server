@@ -8,7 +8,7 @@ app.use(require("./routes/question.js"));
 app.use(require("./routes/user.js"));
 
 // get driver connection
-const dbo = require("./db/conn.ts");
+const dbo = require("./database/conn.ts");
 
 app.listen(port, () => {
   // perform a database connection when server starts
