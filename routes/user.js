@@ -1,6 +1,6 @@
 const express = require("express");
 
-var UserModelMethods = require("../Models/user.model");
+var UserModelMethods = require("../models/user.model");
 
 // questionRoutes is an instance of the express router.
 // We use it to define our routes.

@@ -1,4 +1,4 @@
-const UserModelSchema = require("../Schemas/user.schema.js");
+const UserModelSchema = require("../schemas/user.schema.js");
 
 /* Create */
 UserModelSchema.Create = async function (req, res) {
