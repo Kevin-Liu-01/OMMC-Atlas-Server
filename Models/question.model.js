@@ -1,4 +1,4 @@
-const QuestionModelSchema = require("../Schemas/record.schema");
+const QuestionModelSchema = require("../Schemas/question.schema.js");
 
 /* Create */
 QuestionModelSchema.Displayall = function (req, res) {

@@ -5,11 +5,11 @@ require("dotenv").config({ path: "./config.env" });
 const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
-app.use(require("./routes/record"));
-app.use(require("./routes/user"));
+app.use(require("./Routes/question"));
+app.use(require("./Routes/user"));
 
 // get driver connection
-const dbo = require("./db/conn");
+const dbo = require("./db/conn.ts");
 
 app.listen(port, () => {
   // perform a database connection when server starts
@@ -17,5 +17,5 @@ app.listen(port, () => {
   //   if (err) console.error(err);
 
   // });
-  console.log(`Server is  running on port: ${port}`);
+  console.log(`Server is currently running on PORT: ${port}`);
 });
